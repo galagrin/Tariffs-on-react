@@ -1,0 +1,42 @@
+[
+    {
+        "tarifname": "Безлимитный 300",
+        "tarifprice": "300",
+        "tarifspeed": "10",
+        "tarifinfo": "Объем включенного трафика не ограничен",
+        "id": "1",
+        "nameColor": "#229CAB",
+        "priceColor": "#2CC1D5"
+    },
+
+    {
+        "tarifname": "Безлимитный 450",
+        "tarifprice": "550",
+        "tarifspeed": "50",
+        "tarifinfo": "Объем включенного трафика не ограничен",
+        "id": "12",
+        "nameColor": "#1F8972",
+        "priceColor": "#24AE8D"
+    },
+
+    {
+        "tarifname": "Безлимитный 550",
+        "tarifprice": "550",
+        "tarifspeed": "100",
+        "tarifinfo": "Объем включенного трафика не ограничен",
+        "id": "13",
+        "nameColor": "#C4554E",
+        "priceColor": "#F46A5F",
+        "isAccented": true
+    },
+
+    {
+        "tarifname": "Безлимитный 1000",
+        "tarifprice": "1000",
+        "tarifspeed": "200",
+        "tarifinfo": "Объем включенного трафика не ограничен",
+        "id": "14",
+        "nameColor": "#282F37",
+        "priceColor": "#333A44"
+    }
+]
