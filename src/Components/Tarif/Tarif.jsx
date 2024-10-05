@@ -1,18 +1,16 @@
+
 import "./tarif.css";
 
-function Tarif(props) {
-    const {
-        tarifname,
-        tarifprice,
-        tarifspeed,
-        tarifinfo,
-        nameColor,
-        priceColor,
-        isAccented,
-    } = props;
+function Tarif({ id, tarifname, tarifprice, tarifspeed, tarifinfo, nameColor ,priceColor, selectedTarif, setSelectedTarif}) {
+    
 
+    const handleClick =(id)=>{
+        setSelectedTarif (id);
+    }
     return (
-        <div className={`cardwrapper ${isAccented ? "isAccented" : ""}`}>
+        <div className={selectedTarif === id ? "cardwrapper isAccented" : "cardwrapper"} 
+        onClick={()=>handleClick(id)}>
+
             <div className="card_name" style={{ backgroundColor: nameColor }}>
                 <div className="card_text">{tarifname}</div>
             </div>
@@ -33,3 +31,5 @@ function Tarif(props) {
 }
 
 export default Tarif;
+
+

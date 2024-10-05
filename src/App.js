@@ -1,8 +1,15 @@
+import { useState } from "react";
 import "./App.css";
 import data from "./data.json";
 import Tarif from "./Components/Tarif/Tarif";
 
 function App() {
+
+    const[selectedTarif, setSelectedTarif] = useState("");
+    const handleTarifClick = (id) =>{
+        setSelectedTarif(selectedTarif === id ? "" : id);
+    }
+
     return (
         <div className="App">
             {data.map((item) => (
@@ -15,10 +22,17 @@ function App() {
                     priceColor={item.priceColor}
                     nameColor={item.nameColor}
                     tarifSize={item.tarifSize}
-                    isAccented={item.isAccented}
+                    id = {item.id}
+                    selectedTarif={selectedTarif} 
+                    setSelectedTarif={handleTarifClick}
+
                 />
             ))}
+
+        
         </div>
     );
 }
 export default App;
+
+
